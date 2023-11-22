@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "CorruptionSaveLocationPatcher": {
+      "commandName": "Project",
+      "commandLineArgs": "\"D:\\Projects\\CorruptionSaveLocationPatcher\\disc\" \"Norion Bryyo Phaaze\""
+    }
+  }
+}
