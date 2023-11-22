@@ -22,7 +22,7 @@ namespace Trilogy.Game.Corruption.Patches.DOL
                 addi r3, r3, 0x2000
                 stw r3, -0x5928(r2)
                 b 0x{{addresses.GetAddress("GetSaveFileNameString", 0x4c):X8}}
-                """.Split("\r\n");
+                """.ReplaceLineEndings("\n").Split("\n");
             var load_save_redirect_size = load_save_redirect.Length * 4;
             if (load_save_redirect_size % 0x20 != 0)
                 load_save_redirect_size += 0x20 - load_save_redirect_size % 0x20;
